@@ -10,7 +10,7 @@ export default class SignUpController {
         if (!httpRequest.body.email) {
             return {
                 statusCode: 400,
-                body: new Error('Missing param: emailq')
+                body: new Error('Missing param: email')
             };
         }
     }
