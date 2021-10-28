@@ -2,7 +2,7 @@ export default class SignUpController {
     handle = (httpRequest: any): any => {
         if (!httpRequest.body.name) {
             return {
-                statusCode: 401,
+                statusCode: 400,
                 body: new Error('Missing param: name')
             };
         }
